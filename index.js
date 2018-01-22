@@ -75,6 +75,7 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
+    rock.style.top = `${top += 4}px`;
     // implement me!
     // (use the comments below to guide you!)
     /**
@@ -101,11 +102,9 @@ function createRock(x) {
   }
 }
   // We should kick of the animation of the rock around here
-    function step() {
-      rock.style.top = `${top -= 4}px`;
-      if (top > 0) {
+   
       window.requestAnimationFrame(step)
-    }
+    
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
   ROCKS.push(rock)
