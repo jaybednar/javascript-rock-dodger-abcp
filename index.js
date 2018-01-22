@@ -159,7 +159,7 @@ function moveDodgerLeft() {
    * This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
-   DODGER.style.left = `${DODGER.style.left -= 4}px`;
+   `${DODGER.style.left -= 4}px`;
    window.requestAnimationFrame(moveDodgerLeft);
 }
 
@@ -169,7 +169,7 @@ function moveDodgerRight() {
    * This function should move DODGER to the right
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
-   DODGER.style.left = `${DODGER.style.left += 4}px`;
+   `${DODGER.style.left += 4}px`;
    window.requestAnimationFrame(moveDodgerRight);
 }
 
