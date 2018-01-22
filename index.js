@@ -83,7 +83,7 @@ function createRock(x) {
      * we should call endGame()
      */
     if (checkCollision(rock)) {
-      endGame;
+      return endGame();
     }
     /**
      * Otherwise, if the rock hasn't reached the bottom of
@@ -96,7 +96,8 @@ function createRock(x) {
     /**
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
-     */else if (top === 0) {
+     */
+      else if (top === 0) {
        GAME.removeChild(rock);
      }
   }
