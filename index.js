@@ -172,7 +172,7 @@ function moveDodgerRight() {
    */
    var dodgerRight = positionToInteger(DODGER.style.left);
    DODGER.style.left = `${dodgerRight += 4}px`;
-   window.requestAnimationFrame(moveDodgerRight);
+   window.requestAnimationFrame(DODGER.style.left);
 }
 
 /**
