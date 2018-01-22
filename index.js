@@ -122,8 +122,8 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  while (ROCKS.hasChildNodes()) {
-    ROCKS.removeChild(ROCKS.lastChild)
+  while (ROCKS.length > 0) {
+    ROCKS.removeChild(rock)
   }
   document.removeEventListener(moveDodger, gameInterval);
   alert("YOU LOSE!");
