@@ -122,7 +122,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  ROCKS.splice(0);
+  ROCKS = [];
   document.removeEventListener(moveDodger, gameInterval);
   alert("YOU LOSE!");
 }
