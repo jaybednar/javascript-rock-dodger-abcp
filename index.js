@@ -122,8 +122,10 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  while (ROCKS.length > 0) {
+  if (ROCKS.length > 0) {
+    while (ROCKS.length > 0) {
     ROCKS.pop();
+    }
   }
   document.removeEventListener(moveDodger, gameInterval);
   alert("YOU LOSE!");
