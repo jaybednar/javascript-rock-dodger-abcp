@@ -123,9 +123,7 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval);
   
-  while (ROCKS.length > 0) {
-    ROCKS.pop();
-  }
+  ROCKS.length = 0;
   
   document.removeEventListener('keydown', moveDodger);
   
