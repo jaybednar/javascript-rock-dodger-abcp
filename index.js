@@ -102,8 +102,10 @@ function createRock(x) {
 
   // We should kick of the animation of the rock around here
     function step() {
-    rock.style.top = `${top -= 4}px` 
-    
+      rock.style.top = `${top -= 4}px` 
+      if (top < 200) {
+      window.requestAnimationFrame(step)
+    }
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
   ROCKS.push(rock)
