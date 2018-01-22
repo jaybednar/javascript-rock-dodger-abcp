@@ -99,10 +99,10 @@ function createRock(x) {
        GAME.removeChild(rock);
      }
   }
-
+}
   // We should kick of the animation of the rock around here
     function step() {
-      rock.style.top = `${top -= 4}px` 
+      rock.style.top = `${top -= 4}px`;
       if (top > 0) {
       window.requestAnimationFrame(step)
     }
