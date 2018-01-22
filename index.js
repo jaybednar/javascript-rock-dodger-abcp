@@ -98,7 +98,7 @@ function createRock(x) {
      * we should remove the rock from the DOM
      */
       else if (top === 0) {
-       GAME.removeChild(rock);
+       rock.remove();
      }
   }
 }
