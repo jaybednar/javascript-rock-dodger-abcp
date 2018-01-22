@@ -124,6 +124,7 @@ function endGame() {
   clearInterval(gameInterval);
   
   ROCKS.length = 0;
+  GAME.remove(rock);
   
   document.removeEventListener('keydown', moveDodger);
   
